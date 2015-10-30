@@ -1,0 +1,17 @@
+{
+  "name": "arifdesign",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "parser": "^0.1.4"
+  }
+}

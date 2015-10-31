@@ -12,6 +12,7 @@
     "body": "^5.1.0",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
+    "mongoose": "^4.2.3",
     "parser": "^0.1.4"
   }
 }

@@ -8,6 +8,11 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             controller: 'MainCtrl'
         })
 
+        .when('/projects', {
+                    templateUrl: 'views/projects.html',
+                    controller: 'MainCtrl'
+                })
+
         .otherwise({
             redirectTo: '/'
         });

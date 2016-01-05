@@ -16,7 +16,7 @@ hr {
     width: 300px;
     border: none;
     height: 2px;
-    background-color: #f7f7f7;
+    background-color: #dedede;
     margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ h3 {
 }
 
 .content a {
-    color: #E58282;
+    color: #E58282; 
     text-decoration: none;
 }
 
@@ -84,13 +84,30 @@ h3 {
 }
 
 
+.project-work {
+    height: 100%;
+    width: 100%;
+    color: #8E8E93;
+    line-height: 1.6em;
+}
+
 .close {
     text-decoration: none;
     color: #c7c7cc;
     font-size: 25px;
 }
 
+.project {
+    margin: 0 auto;
+    text-align: justify;
+    width: 300px;
+    padding: 10px 0 10px 0;
+}
 
+.project a {
+    text-decoration: none;
+    color: #E58282;
+}
 
 small {
     letter-spacing: 1px;

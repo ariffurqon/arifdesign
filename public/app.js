@@ -11,13 +11,12 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/projects', {
                     templateUrl: 'views/templates/projects.html',
                     controller: 'MainCtrl'
-                })
+        })
 
         .otherwise({
             redirectTo: '/'
         });
 
-    //
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false

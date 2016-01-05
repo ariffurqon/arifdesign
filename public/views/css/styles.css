@@ -126,4 +126,7 @@ small {
     hr {
         width: 80%;
     }
+    .project-work {
+            width: 80%;
+        }
 }

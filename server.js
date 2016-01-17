@@ -16,16 +16,16 @@ mongoose.connect(
   'mongodb://localhost/arifdesign'
 );
 
-// listen on port 3000
-app.listen(process.env.PORT || 3000, function () {
-	console.log('happy ending only happens on localhost:3000');
-});
-
 // set the static files location 
 app.use(express.static(__dirname + '/')); 
 
 // load our public/index.html file
 app.get('/', function(req, res) {
     res.sendFile(__dirname + 'index.html'); 
+});
+
+// listen on port 3000
+app.listen(process.env.PORT || 3000, function () {
+	console.log('happy ending only happens on localhost:3000');
 });
 

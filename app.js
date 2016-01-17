@@ -1,6 +1,6 @@
 var app = angular.module('arifdesign', ['ngRoute']);
 
-app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         //homepage
         .when('/', {
@@ -21,11 +21,6 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .otherwise({
             redirectTo: '/'
         });
-
-    $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
-    });
 }]);
 
 

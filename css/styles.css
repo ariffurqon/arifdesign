@@ -53,7 +53,7 @@ html, body {height: 100%;}
 
 .navbar-brand {
   padding: 0; /* firefox bug fix */
-  width: auto
+  width: auto;
 }
 
 .copyright a {
@@ -74,7 +74,7 @@ a:hover {
 }
 
 a:focus {
-  color: gray;
+  color: black;
 }
 
 hr {
@@ -116,7 +116,6 @@ hr {
     margin: 0 auto;
     width: 500px;
     text-align: justify;
-    
 }
 
 .content a {
@@ -139,13 +138,11 @@ hr {
     text-decoration: none;
 }
 
-
-
 small {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 11px;
-    color: #8E8E93 ;
+    color: #555;
 }
 
 @media (max-width: 640px) {
@@ -161,16 +158,16 @@ small {
 }
 
 h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
   }
 h3 {
-    font-weight: 400;
-    padding: 0 0 5px 0;
-    color: #333;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+  color: #333;
 }
 h4 {
     font-size: 19px;
@@ -180,7 +177,6 @@ h4 {
     margin-bottom: 30px;
 }
 ul li {
-
     display:inline-block;
     display: center;
 
@@ -188,4 +184,29 @@ ul li {
 .social {
   display: center;
 }
+
+/*#tags span.tag{
+  text-align: center;
+  cursor:pointer;
+  display:block;
+  float:left;
+  color:#555;
+  background:#ddddaa;
+  padding:5px 5px;
+  margin:4px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+#tags span.tag:hover{
+  opacity:0.7;
+}*/
+
+.navbar-bottom {
+min-height: 300px;
+margin-top: 100px;
+background-color: gray;
+padding-top: 35px;
+color:#FFFFFF;
+}
+
 

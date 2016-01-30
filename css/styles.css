@@ -54,6 +54,11 @@ html, body {height: 100%;}
     font-size: 1.3em;
 }
 
+.navbar-default .navbar-nav a:hover {
+    color: White;
+    font-size: 1.3em;
+    border-bottom: 2px solid red;
+}
 .navbar-brand {
   padding: 0; /* firefox bug fix */
   width: auto;

@@ -1,2 +1,2 @@
 
-######## my website, built using MEAN stack http://arif.design
+######## my website, built using MEAN stack arif.design

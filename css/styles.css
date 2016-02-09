@@ -1,17 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Poiret+One);
 
-body {
-      line-height: 1.8;
-      color: #f5f6f7;
-      font: 20px 'Poiret One', Raleway;
-  }
-
-p {
-  font-size: 16px;
-}
-  
-* {margin:0;padding:0;} 
-html, body {height: 100%;}
 #wrap {
   min-height: 100%;
   background-color: #FFFFFF;
@@ -19,26 +7,24 @@ html, body {height: 100%;}
 
 #main {
   overflow:auto;
-  padding-bottom: 150px; /* must be same height as the footer */
+  background-color: ;
+  padding-bottom: 150px;  /*must be same height as the footer */
 }
 
 #footer {
   position: relative;
-  margin-top: -150px; /* negative value of footer height */
+  margin-top: -150px;  /*negative value of footer height */
   height: 150px;
   clear:both;
 } 
 
-.container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
+/*navbar/header*/
 .navbar {
-    padding-top: 15px;
+    padding-top: 25px;
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     font-size: 12px;
     letter-spacing: 5px;
     background-color: transparent;
@@ -55,10 +41,10 @@ html, body {height: 100%;}
 .navbar-default .navbar-nav a:hover {
     color: White;
     font-size: 1.3em;
-    border-bottom: 3px solid gray;
+    border-bottom: 1px solid gray;
 }
 .navbar-brand {
-  padding: 0; /* firefox bug fix */
+  padding: 0;  /*firefox bug fix */
   width: auto;
 }
 
@@ -66,12 +52,6 @@ a{
   color: black;
   text-decoration: none;
   font-size: 15px !important;
-}
-
-.github {
-  text-decoration: none;
-  color: gray;
-  text-decoration: none;
 }
 
 a:link {
@@ -137,14 +117,10 @@ hr {
     color: #007AFF;
 }
 
-.image-div-right h3 {
-    letter-spacing: 5px;
-}
-
 .links a {
     padding: 10px;
     letter-spacing: 2px;
-    color: #34AADC;
+    color: red;
     text-decoration: none;
 }
 
@@ -162,6 +138,7 @@ small {
     color: #555;
 }
 
+
 @media (max-width: 640px) {
     .outer {
         padding: 50px 0 50px 0;
@@ -173,17 +150,8 @@ small {
         width: 80%;
     }
 }
-h1 {
-  text-align: center;;
-}
 
-h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #303030;
-  font-weight: 600;
-  margin-bottom: 30px;
-  }
+
 h3 {
   font-weight: 400;
   padding: 0 0 5px 0;
@@ -199,28 +167,123 @@ h4 {
 ul li {
     display:inline-block;
     display: center;
-
+    font-size: 25px;
+    font-weight: 400px;
 }
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /*font-family: 'Raleway',sans-serif;*/
+  font: 20px 'Poiret One', Raleway;
+  font-weight: 300;
+  font-size: 13px;
+  line-height:22px;
+  color: #232323;
+  background-color: #fff;
+}
+
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 0;
+}
+h1 {
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px 0 50px 0;
+  letter-spacing: 4px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 1px solid #212121;
+  margin-bottom: 33px;
+  padding-bottom: 7px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #616265;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+img {
+    max-width: 100%;
+}
+
+
+/***Structure***/
+
+.box-content {
+  width: 100%;
+  float: left;
+  padding: 100px 0 100px 0;
+}
+.box-text:hover{
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+.box-text {
+  border: 1px solid #dbdbdb;
+  padding: 28px 23px 31px;
+  position: relative;
+    display: block;
+    background-color: #F2F0F0;
+    height: 400px;
+}
+.box-img {
+  border: 1px solid #dbdbdb;
+  padding: 28px 23px 31px;
+  position: relative;
+    display: block;
+    background-color: #F2F0F0;
+    height: 400px;
+    text-align: center;
+}
+.box-img:hover{
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+
+.box-content a:hover{
+  color: red;
+}
+
+#section1 i{
+  margin-right: 10px;
+}
+
+/*Skills*/
+.skills-box .meter {
+    height: 6px;
+    border: 1px solid #434343;
+    padding: 1px;
+    margin-bottom: 15px;
+}
+.skills-box .meter p {
+    height: 2px;
+    background: #252525;
+}
+.skills-box .skills-progress > p span {
+    float: right;
+    color: #434343;
+}
+
+/***CONTACT*****/
 .social {
   display: center;
+  padding-top: 200px;
 }
 
-#tags span.tag{
-  text-align: center;
-  cursor:pointer;
-  display: inline;
-  float:left;
-  color:#555;
-  background:#ddddaa;
-  padding:5px 5px;
-  margin:4px;
-  border-radius: 75%;
-  font-size: 10px;
-}
-#tags span.tag:hover{
-  opacity:0.7;
-}
-
+/***footer***/
 .navbar-bottom {
 min-height: 300px;
 margin-top: 0;
@@ -229,13 +292,47 @@ padding-top: 35px;
 color:#FFFFFF;
 }
 
-.jumbotron {
-    position: relative;
-    background: black;
-    width: 100%;
-    height: 200%;
-    background-size: cover;
-    overflow: hidden;
+/*portfolio*/
+.container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+.panel-heading {
+    color: #fff !important;
+    background-color: #F2F0F0 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.panel-footer {
+    background-color: white !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 20px;
+}
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+.panel-footer a:hover {
+    color: red;
 }
 
 

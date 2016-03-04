@@ -1,66 +1,78 @@
 <!-- portfolio.html -->
-<div class="container-fluid">
-  <div class="text-center">
-    <h1>Recent Projects</h1>
-  </div>
+    <section id="section2" class="cd-section">
+        <div class="container">
+          <div class="row">
+            <div class="box-content">
+                <h1> RECENT WORKS </h1>
+                <!-- Category Filter -->
+                    <dl class="group"><hr>
+                       <dt></dt>
+                        <dd>
+                            <ul class="filter group albumFilter"> 
+                                <li class="cl-effect-11 current"><a data-hover="SHOWALL" ng-click="myFilter = undefined" class="active" href="">SHOWALL</a></li> 
 
-  <div class="row slideanim">
-    <div class="col-md-offset-3 col-md-6">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h3>Web App</h3>
-        </div>
-        <div class="panel-body">
-          <img src="images/dlish.png" width="800" height="600">
-        </div>
-        <div class="panel-footer">
-          <h3>dlish</h3>
-          <h4>A web application for curating the best foodie adventures built using Angular.js frameworks with Firebase.</h4>
-          <a class="github" href="https://github.com/ariffurqon/dlish" target="_blank">
-              <img src="images/github.png" class="img-circle" width="30" height="30"> &nbsp <a href="https://dlish.firebaseapp.com" target="_blank">DEMO</a> 
-          </a>
-        </div>
-      </div>      
-    </div>   
-    <div class="col-md-offset-3 col-md-6">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h3>Mobile App</h3>
-        </div>
-        <div class="panel-body">
-          <img src="images/biblio.png" width="500" height="600">
-        </div>
-        <div class="panel-footer">
-          <h3>biblio</h3>
-          <h4>A mobile application for searching books built using the awesomeness of React-Native with googlebooks api.</h4>
-          <a class="github" href="https://github.com/ariffurqon/biblio" target="_blank">
-              <img src="images/github.png" class="img-circle" width="30" height="30">
-          </a>
-        </div>
-      </div>      
-    </div> 
+                                <li class="cl-effect-11"><a data-hover="WEB" ng-click="myFilter = {category: 'web'}" href="">WEB</a></li> 
 
-    <div class="col-md-offset-3 col-md-6">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h3>Desktop App</h3>
-        </div>
-        <div class="panel-body">
-          <img src="images/spider.png" width="600" height="600">
-        </div>
-        <div class="panel-footer">
-          <h3>spider</h3>
-          <h4>A tabbed browser desktop application built using NW.js/Node-Webkit.js, express and Angular.js</h4>
-          <a class="github" href="https://github.com/ariffurqon/spider" target="_blank">
-              <img src="images/github.png" alt="github" class="img-circle" width="30" height="30">
-          </a>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-<h1>Please visit my github for other side projects</h1>
+                                <li class="cl-effect-11"><a data-hover="MOBILE" ng-click="myFilter = {category: 'mobile'}" href="">MOBILE</a></li> 
 
+                                <li class="cl-effect-11"><a data-hover="DESKTOP" ng-click="myFilter = {category: 'desktop'}" href="">DESKTOP</a></li> 
 
- 
-  
+                            </ul> 
+                        </dd>
+                    </dl>
+                    <div class="portfolio albumContainer activegrid" ng-controller="dataImagesWork">
+                            
+                    <ul id="product" class="nav-pills nav-stacked rectangle-list" ng-controller="dataImagesWork">
+                            <li class="col-md-12 my-gallery-animation item grid" ng-repeat="product in images_work | filter:myFilter" >
+                                <figure class="effect-portfolio">
+                                    <a href=""><img ng-src="images/{{product.src}}" alt="" /></a>                              
+                                    <figcaption>
+                                            <p>{{product.description}}</p>
+                                            <a href="templates/{{product.url_details}}" class="smooth-redirect" ></a>
+                                    </figcaption>   
+                                </figure>
+                          </li> 
+                      </ul>
+                            
+                      </div>
+             </div><!--close box content-->
+          </div>
+      </div>
+
+     
+    <script>
+        /********************************************
+        CAROUSEL
+        ********************************************/
+        $("#owl-demo").owlCarousel({
+
+            navigation: false, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true
+
+        });
+    </script>
+    <script>
+        $('.albumFilter li').on("click", function () {
+            $('.albumFilter .current').removeClass('current');
+            $(this).addClass('current');
+        });
+    </script>
+
+    <script type="text/javascript">
+        /********************************************
+        CLOSE PAGE DETAIL
+        ********************************************/
+//        $(document).ready(function () {
+        $(".smooth-redirect").on("click", function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+//        });
+   </script>
+    

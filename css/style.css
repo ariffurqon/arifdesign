@@ -183,7 +183,9 @@ header nav .menu li a{
 .menu .cl-effect-11 a::before {
 	padding: 7px 0;
 }
-.menu .current a { color: #333; border-bottom: 10px solid #333;}
+.menu .current a { 
+    color: #333; 
+    border-bottom: 5px solid #333;}
 
 /*****Mini Menu*****/
 
